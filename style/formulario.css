@@ -135,6 +135,8 @@ label input {
     transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
 }
 
+#password::placeholder { color: white; }
+
 label input:hover {
     background-color: #454045;
     border: solid 1px #f3f3f4;

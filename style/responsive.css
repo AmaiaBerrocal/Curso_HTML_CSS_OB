@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1rem;
+    background-color: antiquewhite;
+}
+
+.lateral {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    border: solid 1px rgb(218, 190, 156);
+    padding: 5px;
+    margin: 5px;
+    gap: 5px;
+}
+
+.principal {
+    margin: 5px;
+    display: flex;
+}
+
+.contenido-principal {
+    flex-grow: 1;
+}
+
+@media (max-width: 640px) {
+    .lateral {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+}
